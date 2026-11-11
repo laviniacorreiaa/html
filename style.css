@@ -12,6 +12,7 @@
             --bege: #b89278;
             --amarelo: #e3a22e;
             --preto: #000000;
+
         }
 
 
@@ -69,7 +70,7 @@
 
 
         nav a:hover {
-            color: var(--marrom);
+            color: var(--preto);
         }
 
 
@@ -92,7 +93,7 @@
 
 
         .btn-marrom:hover {
-            background: var(--preto);
+            background: var(--amarelo);
             transform: translateY(-3px);
         }
 
