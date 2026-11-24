@@ -1,135 +1,458 @@
-/* estilo.css — Cafeteria Grão Dourado
-   Usado por: reserva.html, reserva-formsubmit.html e obrigado.html */
+/* ===== FONTE SORA (hospedada no projeto, sem depender de site externo) ===== */
+@font-face {
+  font-family: 'Sora';
+  src: url("fontes/sora-300.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
 
-/* Faz width e padding caberem juntos (aula do Box Model) */
+
+@font-face {
+  font-family: 'Sora';
+  src: url("fontes/sora-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Sora';
+  src: url("fontes/sora-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Sora';
+  src: url("fontes/sora-600.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* ===== BASE ===== */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-/* Página */
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #ddeaf8;
-  color: #494f8f;
-  max-width: 600px;
+  font-family: 'Sora', sans-serif;
+  background-color: #06121e;
+}
+
+
+img {
+  width: 100%;
+}
+
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+i {
+  color: #fff;
+}
+
+
+/* Contorno para quem navega pelo teclado */
+a:focus-visible {
+  outline: 3px solid #f68e36;
+  outline-offset: 3px;
+}
+
+
+.conteiner {
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 20px;
-  line-height: 1.5;
-}
-
-/* Títulos */
-h1 {
-  border-bottom: 4px solid #acb6f5;
-  padding-bottom: 8px;
-}
-
-h2 {
-  color: #1a73c9;
-}
-
-.centro {
-  text-align: center;
-}
-
-/* Grupos do formulário */
-fieldset {
-  background-color: white;
-  border: 2px solid #369ef6;
-  border-radius: 8px;
-  padding: 12px 20px;
-  margin-bottom: 20px;
-}
-
-legend {
-  color: #1a73c9;
-  font-weight: bold;
   padding: 0 8px;
 }
 
-/* Rótulos: o cursor de mãozinha mostra que clicar no texto marca o campo */
-label {
-  font-weight: bold;
-  cursor: pointer;
+
+/* ===== CABEÇALHO ===== */
+.fundo-inicio {
+  position: relative;
 }
 
-/* Campos de texto, data, número, lista e área de texto (class="campo") */
-.campo {
+
+.fundo-inicio::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
-  padding: 10px;
-  margin-top: 4px;
-  border: 2px solid #b8c4d6;
-  border-radius: 6px;
-  font-size: 16px;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  z-index: -1;
+  background-image: linear-gradient(to bottom, rgba(9, 255, 0, 0.1), #8c8f79), url("imagem/fundobook.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  opacity: 0.9;
 }
 
-.campo:hover {
-  border-color: #369ef6;
+
+header {
+  width: 100%;
 }
 
-.campo:focus {
-  border-color: #1a73c9;
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(54, 158, 246, 0.35);
+
+.cabecalho-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* Botões */
-button {
-  padding: 12px 24px;
-  border: none;
-  border-radius: 6px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+
+.cabecalho-icones {
+  display: flex;
+  gap: 14px;
 }
 
-.btn-enviar {
-  background-color: #5e9af5;
-  color: #2b2d42;
+
+.cabecalho-icones a:hover i {
+  animation: sobe-e-desce 0.8s
+  infinite alternate;
+  color: #7e6f6f;
 }
 
-.btn-enviar:hover {
-  background-color: #93bbf7;
-  transform: translateY(-2px);
+
+@keyframes sobe-e-desce{
+  from{ 
+    transform: translateY(0px); 
+  scale: (1);}
+  to { transform: translateY(-6px);
+  scale: (1.2); }
 }
 
-.btn-limpar {
-  background-color: #9dafce;
-  color: #2b2d42;
+
+
+
+
+
+.cabecalho-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 14px;
 }
 
-.btn-limpar:hover {
-  background-color: #cfd6e2;
+
+.cabecalho-botao {
+  border: 1px solid #fff;
+  padding: 8px 24px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: transparent;
+  transition: background-color 1.3s, border 1.3s;
 }
 
-/* Contorno para quem navega pelo teclado */
-button:focus-visible {
-  outline: 3px solid #1a73c9;
-  outline-offset: 2px;
+
+.cabecalho-botao:hover {
+  border: 1px solid #868181;
+  background-color: #868181;
 }
 
-/* Página de obrigado */
+
+/* ===== HERO (frase principal) ===== */
 .destaque {
-  background-color: #fff6ec;
-  border-left: 5px solid #f68e36;
+  color: #fff;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+}
+
+
+.destaque h1 {
+  text-align: center;
+  line-height: 150%;
+  max-width: 940px;
+  font-size: 46px;
+}
+
+
+.destaque p {
+  text-align: center;
+  margin: 14px 0;
+}
+
+
+.botao-catalogo {
+  padding: 11px 25px;
+  color: #fff;
+  background-color: #9eb192;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 14px 0;
+}
+
+
+/* ===== SOBRE ===== */
+.sobre {
+  background-color: #afb19e;
+  color: #fff;
+  overflow: hidden;
+}
+
+
+.sobre-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 34px 14px 64px 14px;
+}
+
+
+.sobre-conteudo img {
+  max-width: 570px;
+}
+
+
+.sobre-conteudo div {
+  flex: 1;
+}
+
+
+.sobre-descricao h2 {
+  font-size: 38px;
+  margin-bottom: 24px;
+}
+
+
+.sobre-descricao p {
+  margin-bottom: 14px;
+  line-height: 150%;
+}
+
+
+/* ===== SERVIÇOS ===== */
+.Catalogo {
+  background-color: #fff;
+  color: #232224;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 54px 14px;
+}
+
+
+.servicos-conteudo h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 14px;
+}
+
+
+.servicos-conteudo p {
+  line-height: 150%;
+  margin-bottom: 14px;
+  text-align: center;
+  max-width: 780px;
+}
+
+
+.cortes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 0 44px 34px 44px;
+}
+
+
+.corte {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 -1px 17px -4px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+}
+
+
+.corte img {
+  width: 100%;
+  max-width: 354px;
+  transition: transform 0.s;
+}
+
+
+.corte:hover img {
+  transform: scale(1.1);
+}
+
+
+.corte-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+  background-color: #fff;
+  z-index: 99;
+}
+
+
+.corte-preco {
+  color: #fff;
+  background-color: #879b7a;
+  padding: 4px 8px;
   border-radius: 4px;
-  padding: 12px 16px;
 }
 
-code {
-  background-color: #fff1e3;
-  color: #a84b07;
-  padding: 2px 6px;
-  border-radius: 4px;
+
+/* ===== RODAPÉ ===== */
+.rodape {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 54px 0;
+  gap: 24px;
+  color: #fff;
+  background-color: #afb19e;
 }
 
-a {
-  color: #1a73c9;
-  font-weight: bold;
-  transition: color 0.3s ease;
+
+.rodape-icones {
+  display: flex;
+  gap: 8px;
 }
 
-a:hover {
-  color: #b85309;
+
+/* ===== BOTÃO FIXO DO WHATSAPP ===== */
+.botao-whatsapp {
+  position: fixed;
+  bottom: 14px;
+  right: 24px;
+  z-index: 99;
+}
+
+
+.botao-whatsapp img {
+  max-width: 74px;
+}
+
+
+.botao-whatsapp .dica-texto {
+  visibility: hidden;
+  position: absolute;
+  width: 120px;
+  top: 8px;
+  left: -144px;
+  padding: 6px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #232224;
+  color: #fff;
+  opacity: 0;
+}
+
+
+.botao-whatsapp:hover .dica-texto,
+.botao-whatsapp:focus-visible .dica-texto {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* ===== RESPONSIVIDADE ===== */
+
+
+/* Tablets e celulares (até 768px) */
+@media screen and (max-width: 768px) {
+  .cabecalho-conteudo {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .cabecalho-conteudo i {
+    margin-top: 16px;
+    font-size: 34px;
+  }
+
+
+  .cabecalho-logo img {
+    width: 0px;
+    margin-top: 46px;
+  }
+
+
+  .cabecalho-botao {
+    display: none;
+  }
+
+
+  .destaque {
+    min-height: 60vh;
+  }
+
+
+  .destaque h1 {
+    font-size: 34px;
+    padding: 0 14px;
+    width: 100%;
+  }
+
+
+  .destaque p {
+    font-size: 14px;
+  }
+
+
+  .sobre-conteudo {
+    flex-direction: column;
+  }
+
+
+  .cortes {
+    flex-direction: column;
+  }
+
+
+  .corte img {
+    max-width: 740px;
+  }
+
+
+  .botao-whatsapp img {
+    max-width: 64px;
+  }
+}
+
+
+/* Celulares (até 480px) */
+@media screen and (max-width: 434px) {
+    .cabecalho-conteudo {
+    width: 100%;
+    
+  }
+  .destaque h1 {
+    font-size: 24px;
+  }
+.cabecalho-logo img {
+  width: 250px;
+  
+  
+}
+
 }

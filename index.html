@@ -3,609 +3,195 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rei do Burguer | O Verdadeiro Sabor Real</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href = "style.css">
-  <link rel="shortcut icon" href="imagem/rei (40 x 40 px).png" type="image/x-icon">
+  <meta name="description" content="Dev Barber: corte, barba e agendamento rápido pelo WhatsApp.">
+  <title>Dev Barber - Sua barbearia!</title>
+
+
+  <!-- Ícones (Font Awesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+  <!-- Nosso CSS (por último, para vencer os anteriores em caso de empate).
+       A fonte Sora é carregada por ele, a partir da pasta fontes/ -->
+  <link rel="stylesheet" href="estilo.css">
+   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
+<body>
 
 
-    
+  <!-- CABEÇALHO -->
+  <div class="fundo-inicio">
     <header>
-        <div class="logo"><img src="imagem/rei (5).svg"></div>
 
 
-        <nav>
-            <a href="#inicio">Início</a>
-            <a href="#cardapio">Cardápio</a>
-            <a href="#sobre">Sobre nós</a>
-            <a href="#localizacao">Localização</a>
-            <a href="https://wa.me/5511960184964? text=Olá!%20Quero%20fazer%20um%20pedido!" class="btn btn-marrom" type="blanck">Peça agora</a>
-        </nav>
-    </header>
-
-
-    <!-- INÍCIO -->
-      <body>
-    <section class="hero" id="inicio">
-
-
-        <div class="hero-content">
-            <div class="tag">♛ O toque real que seu paladar merece</div>
-
-
-            <h1>
-                Seu próximo
-                hambúrguer
-                <span>merece uma coroa.</span>
-            </h1>
-
-
-            <p>
-                Ingredientes selecionados, hambúrgueres suculentos
-                e combinações irresistíveis. Aqui, cada mordida
-                é digna de um rei!
-            </p>
-
-
-            <a href="#cardapio" class="btn btn-amarelo">
-                Conheça nosso cardápio →
-            </a>
+      <nav class="cabecalho-conteudo conteiner">
+        <div class="cabecalho-icones">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram fa-2x"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook fa-2x"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok fa-2x"></i></a>
         </div>
 
 
-        <img class="hero-image"
-        src="imagem/hero.svg"
-        alt="Hambúrguer artesanal">
-
-
-    </section>
-
-
-    <!-- DIFERENCIAIS -->
-    <section class="benefits">
-
-
-        <div class="benefit">
-            <span>•</span> Hambúrguer artesanal
-        </div>
-
-
-        <div class="benefit">
-            <span>•</span> Ingredientes frescos
-        </div>
-
-
-        <div class="benefit">
-            <span>•</span> Sabor de realeza
-        </div>
-
-
-        <div class="benefit">
-            <span>•</span> Feito na hora
-        </div>
-
-
-    </section>
-
-
-    <!-- CARDÁPIO -->
-    <section class="section menu" id="cardapio">
-
-
-        <div class="section-title">
-            <small>Escolha seu favorito</small>
-            <h2>Nosso Cardápio</h2>
-            <p>Grandes sabores para quem tem gosto de rei.</p>
-        </div>
-
-
-        <div class="products">
-
-
-            <div class="product">
-                <img src="imagem/hamburguer.duda.png"
-                alt="Rei Clássico">
-
-
-                <div class="product-info">
-                    <h3>Rainha Marselha</h3>
-                    <p>Pão Brioche Macio Seladinho, Dois Blend Burgers Suculento de 150g, Duplo de Queijo Derretido 2x, Duplo de Bacon Fatiado e Defumado na Lenha Frutifera 2x, e Para Finalizar Nossa Maionese Verde feita na base de salsa, alho e cebola + Opção de Transformar em Grand Triplo Bacon + Opcional de Acompanhamento + Bebida!</p>
-
-
-                    <div class="product-bottom">
-                        <span class="price">R$ 29,90</span>
-                        <a href="https://wa.me/5511960184964? text=Olá!%20Quero%20fazer%20o%20pedido%20do%20Rainha%20Marselha!" class="buy">PEDIR</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="product">
-                <img src="https://teuguiadigital.com/wp-content/uploads/2025/12/d60a3628-4841-4aa0-8fd9-906e791eddbc-1024x768.jpg"
-                alt="Duplo Soberano">
-
-
-                <div class="product-info">
-                    <h3>Rei Borges</h3>
-                    <p>Pão Brioche Macio Seladinho, Blend Burger Suculento de 150g, Cheddar Melt da Casa (Receita do Chef) e Bacon Fatiado Defumado na Lenha Frutifera + Opcional de Acompanhamento + Bebida!</p>
-
-
-                    <div class="product-bottom">
-                        <span class="price">R$ 36,90</span>
-                        <a href="https://wa.me/5511960184964? text=Olá!%20Quero%20fazer%20o%20pedido%20do%20Rei%20Borges!" target="_self" class="buy">PEDIR</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="product">
-                <img src="imagem/hamburguer.roberta.png"
-                alt="Cheddar Real">
-
-
-                <div class="product-info">
-                    <h3>Rainha Carvalho</h3>
-                    <p> Um hambúrguer duplo preparado com pão brioche artesanal com gergelim, levemente tostado, acompanhado de dois suculentos discos de carne bovina grelhada de 150g. Entre as camadas, uma generosa porção de queijo cheddar derretido, fatias de bacon crocante e molho barbecue, que proporciona um toque agridoce e defumado. Uma combinação irresistível para quem aprecia muito queijo, carne e bacon em um único lanche.</p>
-
-
-                    <div class="product-bottom">
-                        <span class="price">R$ 32,90</span>
-                        <a href="https://wa.me/5511960184964? text=Olá!%20Quero%20fazer%20o%20pedido%20do%20Rainha%20Carvalho!" class="buy">PEDIR</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="product">
-                <img src="imagem/julio_lanche.svg"
-                alt="Bacon Supreme">
-
-
-                <div class="product-info">
-                    <h3>Rei Matos</h3>
-                    <p> Um hambúrguer gourmet completo, preparado com pão brioche macio e levemente tostado, recheado com um suculento hambúrguer de carne bovina de 150g. Acompanha uma camada de queijo cheddar cremoso, fatias de bacon crocante, cebola caramelizada e cebola roxa fresca. Para complementar, leva tomate em rodelas, alface fresca e uma deliciosa salada cremosa de repolho com molho especial. É perfeito para quem procura um lanche caprichado, recheado e cheio de personalidade.</p>
-
-
-                    <div class="product-bottom">
-                        <span class="price">R$ 34,90</span>
-                        <a href="https://wa.me/5511960184964? text=Olá!%20Quero%20fazer%20o%20pedido%20do%20Rei%20Matos!" class="buy">PEDIR</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=700"
-                alt="Frango Crocante">
-
-
-                <div class="product-info">
-                    <h3>Rainha Santos</h3>
-                    <p>Pão Brioche Macio Seladinho, Dois Blend Burgers Suculento de 150g, Duplo de Queijo Derretido 2x, Duplo de Bacon Fatiado e Defumado na Lenha Frutifera 2x, e Para Finalizar Nossa Maionese Verde feita na base de salsa, alho e cebola + Opção de Transformar em Grand Triplo Bacon + Opcional de Acompanhamento + Bebida!</p>
-
-
-                    <div class="product-bottom">
-                        <span class="price">R$ 27,90</span>
-                        <a href="https://wa.me/5511960184964? text=Olá!%20Quero%20fazer%20o%20pedido%20do%20Rainha%20Santos!" class="buy">PEDIR</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="product">
-                <img src="imagem/hamburguer.lavinia.png"
-                alt="King Especial">
-
-
-                <div class="product-info">
-                    <h3>Rainha Correia</h3>
-                    <p>Um hambúrguer especial feito com pão brioche artesanal, macio e levemente tostado, recheado com dois filés de frango empanados de 120g, preparados com uma casquinha dourada e crocante. Acompanha queijo cheddar derretido, tomate fresco, cebola roxa e alface americana. Para deixar a experiência ainda mais saborosa, recebe uma generosa camada de molho cremoso de ervas finas, com temperos selecionados, proporcionando equilíbrio entre a crocância do frango e a cremosidade do molho.</p>
-
-
-                    <div class="product-bottom">
-                        <span class="price">R$ 39,90</span>
-                        <a href="https://wa.me/5511960184964? text=Olá!%20Quero%20fazer%20o%20pedido%20do%20Rainha%20Correia!" class="buy">PEDIR</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=700"
-                alt="Frango Crocante">
-
-
-                <div class="product-info">
-                    <h3>Onion Rings</h3>
-                    <p>Pão Brioche Macio Seladinho, Dois Blend Burgers Suculento de 150g, Duplo de Queijo Derretido 2x, Duplo de Bacon Fatiado e Defumado na Lenha Frutifera 2x, e Para Finalizar Nossa Maionese Verde feita na base de salsa, alho e cebola + Opção de Transformar em Grand Triplo Bacon + Opcional de Acompanhamento + Bebida!</p>
-
-
-                    <div class="product-bottom">
-                        <span class="price">R$ 27,90</span>
-                        <a href="https://wa.me/5511960184964? text=Olá!%20Quero%20fazer%20o%20pedido%20de%20uma%20porção%20de%20Onion%20Rings!" class="buy">PEDIR</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=700"
-                alt="Frango Crocante">
-
-
-                <div class="product-info">
-                    <h3>Batata frita con Cheddar e Bacon</h3>
-                    <p>Pão Brioche Macio Seladinho, Dois Blend Burgers Suculento de 150g, Duplo de Queijo Derretido 2x, Duplo de Bacon Fatiado e Defumado na Lenha Frutifera 2x, e Para Finalizar Nossa Maionese Verde feita na base de salsa, alho e cebola + Opção de Transformar em Grand Triplo Bacon + Opcional de Acompanhamento + Bebida!</p>
-
-
-                    <div class="product-bottom">
-                        <span class="price">R$ 27,90</span>
-                        <a href="https://wa.me/5511960184964? text=Olá!%20Quero%20fazer%20o%20pedido%20de%20uma%porção%20de%20Batata%20frita%20com%20Cheddar%20e%20Bacon!" class="buy">PEDIR</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=700"
-                alt="Frango Crocante">
-
-
-                <div class="product-info">
-                    <h3>Batata Rústica</h3>
-                    <p>Pão Brioche Macio Seladinho, Dois Blend Burgers Suculento de 150g, Duplo de Queijo Derretido 2x, Duplo de Bacon Fatiado e Defumado na Lenha Frutifera 2x, e Para Finalizar Nossa Maionese Verde feita na base de salsa, alho e cebola + Opção de Transformar em Grand Triplo Bacon + Opcional de Acompanhamento + Bebida!</p>
-
-
-                    <div class="product-bottom">
-                        <span class="price">R$ 27,90</span>
-                        <a href="https://wa.me/5511960184964? text=Olá!%20Quero%20fazer%20o%20pedido%20de%20uma%porção%20de%20Batata%20Rústica!" class="buy">PEDIR</a>
-                    </div>
-                </div>
-            </div>
-
-             <div class="product">
-                <img src="imagem/1.svg"
-                alt="Taça da felicidade">
-
-
-                <div class="product-info">
-                    <h3>Taça da felicidade</h3>
-                    <p>Taça recheada com sorvete cremoso de creme, envolvida 
-                    por uma generosa camada de amendoim triturado, trazendo uma
-                    textura crocante. Finalizada com uma cobertura de chocolate
-                    ao leite, bolinhas de chocolate, um picolé coberto de chocolate 
-                    e wafer crocante para dar um toque especial.</p>
-
-
-                    <div class="product-bottom">
-                        <span class="price">R$ 39,90</span>
-                        <a href="https://wa.me/5511960184964? text=Olá!%20Quero%20fazer%20o%20pedido%20de%20Uma%20Taça%20da%20Felicidade!" class="buy">PEDIR</a>
-                    </div>
-                </div>
-            </div>
-
-             <div class="product">
-                <img src="imagem/3.svg"
-                alt="Petit Gateau">
-
-
-                <div class="product-info">
-                    <h3>Petit Gateau</h3>
-                    <p>Bolinho de chocolate com exterior delicadamente assado e 
-                    interior recheado com chocolate cremoso e derretido. Acompanha
-                    uma bola de sorvete de creme, que contrasta com a temperatura 
-                    do bolinho, finalizado com calda de chocolate e raspas de chocolate 
-                    para completar essa combinação.</p>
-
-
-                    <div class="product-bottom">
-                        <span class="price">R$ 39,90</span>
-                        <a href="https://wa.me/5511960184964? text=Olá!%20Quero%20fazer%20o%20pedido%20de%20Petit%20Gateau!" class="buy">PEDIR</a>
-                    </div>
-                </div>
-            </div>
-
-             <div class="product">
-                <img src="imagem/2.svg"
-                alt="Brownie">
-
-
-                <div class="product-info">
-                    <h3>Brownie</h3>
-                    <p> Brownie artesanal, com textura macia e interior molhadinho
-                    , coberto com uma generosa camada de calda de chocolate e raspas
-                     de chocolate para finalizar.<br>
-                    <br>
-                    <br></p>
-
-
-                    <div class="product-bottom">
-                        <span class="price">R$ 39,90</span>
-                        <a href="https://wa.me/5511960184964? text=Olá!%20Quero%20fazer%20o%20pedido%20do%20Brownie!" class="buy">PEDIR</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="imagem/agua.svg"
-                alt="King Especial">
-
-
-                <div class="product-info">
-                    <h3>Água sem Gás</h3>
-                    <p>Pão brioche, hambúrguer duplo,
-                    cheddar, bacon, cebola crispy e molho barbecue.</p>
-
-
-                    <div class="product-bottom">
-                        <span class="price">R$ 39,90</span>
-                        <a href="https://wa.me/5511960184964? text=Olá!%20Quero%20fazer%20o%20pedido%20de%20Água%20com%20Gás!" class="buy">PEDIR</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="imagem/coca.svg"
-                alt="King Especial">
-
-
-                <div class="product-info">
-                    <h3>Coca-Cola Lata</h3>
-                    <p>Pão brioche, hambúrguer duplo,
-                    cheddar, bacon, cebola crispy e molho barbecue.</p>
-
-
-                    <div class="product-bottom">
-                        <span class="price">R$ 39,90</span>
-                        <a href="https://wa.me/5511960184964? text=Olá!%20Quero%20fazer%20o%20pedido%20de%20Coca-Cola%20Lata!" class="buy">PEDIR</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="imagem/cocazero.svg"
-                alt="King Especial">
-
-
-                <div class="product-info">
-                    <h3>Coca-Cola Zero Açucar Lata</h3>
-                    <p>Pão brioche, hambúrguer duplo,
-                    cheddar, bacon, cebola crispy e molho barbecue.</p>
-
-
-                    <div class="product-bottom">
-                        <span class="price">R$ 39,90</span>
-                        <a href="https://wa.me/5511960184964? text=Olá!%20Quero%20fazer%20o%20pedido%20de%20Coca-Cola%20Zero%20Açucar%20Lata!" class="buy">PEDIR</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=700"
-                alt="King Especial">
-
-
-                <div class="product-info">
-                    <h3>Água com Gás</h3>
-                    <p>Pão brioche, hambúrguer duplo,
-                    cheddar, bacon, cebola crispy e molho barbecue.</p>
-
-
-                    <div class="product-bottom">
-                        <span class="price">R$ 39,90</span>
-                        <a href="https://wa.me/5511960184964? text=Olá!%20Quero%20fazer%20o%20pedido%20de%20Água%20com%20Gás!" class="buy">PEDIR</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=700"
-                alt="King Especial">
-
-
-                <div class="product-info">
-                    <h3>Suco de Laranja</h3>
-                    <p>Pão brioche, hambúrguer duplo,
-                    cheddar, bacon, cebola crispy e molho barbecue.</p>
-
-
-                    <div class="product-bottom">
-                        <span class="price">R$ 39,90</span>
-                        <a href="https://wa.me/5511960184964? text=Olá!%20Quero%20fazer%20o%20pedido%20de%20Suco%20de%20Laranja!" class="buy">PEDIR</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=700"
-                alt="King Especial">
-
-
-                <div class="product-info">
-                    <h3>Suco de Manga</h3>
-                    <p>Pão brioche, hambúrguer duplo,
-                    cheddar, bacon, cebola crispy e molho barbecue.</p>
-
-
-                    <div class="product-bottom">
-                        <span class="price">R$ 39,90</span>
-                        <a href="https://wa.me/5511960184964? text=Olá!%20Quero%20fazer%20o%20pedido%20de%20Suco%20de%20Manga!" class="buy">PEDIR</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=700"
-                alt="King Especial">
-
-
-                <div class="product-info">
-                    <h3>Suco de Goiaba</h3>
-                    <p>Pão brioche, hambúrguer duplo,
-                    cheddar, bacon, cebola crispy e molho barbecue.</p>
-
-
-                    <div class="product-bottom">
-                        <span class="price">R$ 39,90</span>
-                        <a href="https://wa.me/5511960184964? text=Olá!%20Quero%20fazer%20o%20pedido%20de%20Suco%20de%20Goiaba!" class="buy">PEDIR</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=700"
-                alt="King Especial">
-
-
-                <div class="product-info">
-                    <h3>Suco de Maracujá</h3>
-                    <p>Pão brioche, hambúrguer duplo,
-                    cheddar, bacon, cebola crispy e molho barbecue.</p>
-
-
-                    <div class="product-bottom">
-                        <span class="price">R$ 39,90</span>
-                        <a href="https://wa.me/5511960184964? text=Olá!%20Quero%20fazer%20o%20pedido%20de%20Suco%20de%20Maracujá!" class="buy">PEDIR</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=700"
-                alt="Suco de Limão">
-
-
-                <div class="product-info">
-                    <h3>Suco de Limão</h3>
-                    <p>Pão brioche, hambúrguer duplo,
-                    cheddar, bacon, cebola crispy e molho barbecue.</p>
-
-
-                    <div class="product-bottom">
-                        <span class="price">R$ 39,90</span>
-                        <a href="https://wa.me/5511960184964? text=Olá!%20Quero%20fazer%20o%20pedido%20de%20Suco%20de%20Limão!" class="buy">PEDIR</a>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-        </div>
-
-
-    </section>
-
-
-    <!-- DESTAQUE -->
-    <section class="highlight">
-
-
-        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=1000"
-        alt="Hambúrguer artesanal com ingredientes frescos">
-
-
-        <div class="highlight-content">
-            <div class="tag">Qualidade em cada detalhe</div>
-
-
-            <h2>Não é apenas um hambúrguer. É uma experiência!</h2>
-
-
-            <p>
-                No Rei do Burguer, acreditamos que um bom hambúrguer
-                começa com ingredientes de qualidade e termina
-                com aquele sabor que dá vontade de repetir.
-                Prepare-se para conhecer o seu novo favorito!
-            </p>
-
-
-            <a href="#cardapio" class="btn btn-marrom">
-                Ver cardápio →
-            </a>
-        </div>
-
-
-    </section>
-
-
-    <!-- SOBRE -->
-    <section class="section about" id="sobre">
-
-
-        <div class="section-title">
-            <small>Nossa história</small>
-            <h2>Bem-vindo ao Reino!</h2>
-        </div>
-
-
-        <div class="about-content">
-            <p> Somos apaixonados por hambúrgueres e acreditamos que cada mordida deve ser uma experiência única. Nosso objetivo é oferecer lanches deliciosos, preparados com ingredientes de qualidade, muito sabor e dedicação em cada detalhe.
-
-Mais do que servir hambúrgueres, queremos proporcionar momentos especiais, com muito sabor, qualidade e um atendimento feito para você.
-
-No O Rei do Burger, cada lanche é preparado com carinho para conquistar seu paladar e deixar aquele gostinho de quero mais!
-
-O nosso reino é o sabor, e você é sempre nosso convidado especial! 👑🍔
-            </p>
-        </div>
-
-
-    </section>
-
-
-    <!-- LOCALIZAÇÃO -->
-    <section class="location" id="localizacao">
-
-
-        <div class="tag">Venha nos visitar</div>
-
-
-        <h2>Faça parte do nosso reino!</h2>
-
-
-        <p>
-            Estamos esperando por você para uma experiência
-            cheia de sabor.<br>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14628.913516328777!2d-46.3142912!3d-23.560239850000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce709cdd72cb8d%3A0xa0c48f485457b882!2sEscola%20SENAI%20%22Luis%20Eulalio%20de%20Bueno%20Vidigal%20Filho%22!5e0!3m2!1spt-BR!2sbr!4v1794396894799!5m2!1spt-BR!2sbr" width=100% height="400
-            " style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe> <br>
-            Consulte nosso endereço e faça seu pedido! 
+        <div 
+        class="cabecalho-logo"> 
+          <img
+            src="imagem/logo.png"
+            alt="Logo da loja de decoração"
             
-        </p>
-
-        <p><b> Horário de funcionamento: <br>
-             Terça a quinta: 18h às 23h<br>
-            Sexta e sábado: 18h às 00h<br>
-            Domingo: 18h às 23h30 </b>
-        </p>
+          >
+        </div>
 
 
-        <a href="#inicio" class="btn btn-amarelo">
-            Voltar ao início ↑
+        <div>
+          <a class="cabecalho-botao"
+             href="https://api.whatsapp.com/send?phone=5511994856547&text=Quero%20fazer%20um%20pedido!"
+             target="_blank" rel="noopener">
+            Peça agora
+          </a>
+        </div>
+      </nav>
+
+
+      <main class="destaque conteiner">
+        <h1>"ONDE O DESIGN ENCONTRA O ACOLHIMENTO."</h1>
+        <p>Enviamos para todo o Brasil • Peças exclusivas de alto padrão</p>
+        <p>Visite nossa loja: Seg a Sáb, das 09h às 18h</p>
+        <a
+        
+          href="#catalogo"> <button class="botao-catalogo">Ver catálogo</button> </a>
+
+          
         </a>
+      </main>
+
+
+    </header>
+  </div>
+
+
+  <!-- SOBRE -->
+  <section class="sobre">
+    <div class="conteiner sobre-conteudo">
+      <div>
+        <img src="imagem/duasfotos.png" alt="Fotos de cortes de cabelo e barba feitos na barbearia">
+      </div>
+
+
+      <div class="sobre-descricao">
+        <h2>Sobre a Velluto</h2>
+        <p>Na Velluto Home Decor, acreditamos que cada detalhe transforma uma casa num verdadeiro refúgio. Selecionamos peças exclusivas que unem design atemporal, texturas naturais e sofisticação para elevar os seus ambientes.</p>
+        <p> <strong>Envio seguro para todo o país</strong></p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CATÁLOGO -->
+  <section class="Catalogo" id="catalogo">
+
+
+    <div class="servicos-conteudo conteiner">
+      <h2>Catálogo</h2>
+      <p>Conheça os destaques da nossa coleção. Clique na peça desejada para consultar disponibilidade, dimensões e condições de envio.</p>
+    </div>
+
+
+    <section class="cortes">
+
+
+      <div class="corte">
+        <img src="imagem/vasoorganico.png" alt="Corte normal">
+        <div class="corte-info">
+          <strong>Vaso Orgânico</strong>
+          <span class="corte-preco">R$ 45,00</span>
+        </div>
+      </div>
+
+
+      <div class="corte">
+        <img src="imagem/luminaria.png" alt="Barba completa">
+        <div class="corte-info">
+          <strong>Luminária</strong>
+          <span class="corte-preco">R$ 35,00</span>
+        </div>
+      </div>
+
+
+      <div class="corte">
+        <img src="imagem/livros.png" alt="Corte e barba">
+        <div class="corte-info">
+          <strong>Livros</strong>
+          <span class="corte-preco">R$ 85,00</span>
+        </div>
+      </div>
+
+
+      <div class="corte">
+        <img src="imagem/vela.png" alt="Corte e barba">
+        <div class="corte-info">
+          <strong>Vela</strong>
+          <span class="corte-preco">R$ 119,00</span>
+        </div>
+      </div>
+
+
+      <div class="corte">
+        <img src="imagem/bandeja.png" alt="Corte e barba">
+        <div class="corte-info">
+          <strong>Bandeja Orgânica</strong>
+          <span class="corte-preco">R$ 269,00</span>
+        </div>
+      </div>
 
 
     </section>
-     
-
-    <!-- RODAPÉ -->
-    <footer>
+  </section>
 
 
-        <div class="logo"><img src="imagem/rei (6).svg"></div>
+  <!-- ONDE ESTAMOS
+  <div class="servicos">
+    <h2>Venha conhecer</h2>
+  </div> -->
 
 
-        <p>O sabor que merece a coroa.</p>
-        <p> Terça a quinta: 18h às 23h <br>
-        Sexta e sábado: 18h às 00h<br>
-        Domingo: 18h às 23h30
+  <iframe
+    title="Mapa com a localização da barbearia"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7476.4115143508725!2d-54.58602051703828!3d-20.45674056051272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e8954ac0b10d%3A0x7149aba0cb5688b8!2sShopping%20Campo%20Grande!5e0!3m2!1sen!2sbr!4v1688840244482!5m2!1sen!2sbr"
+    width="100%" height="450" style="border:0;" allowfullscreen loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 
-        <p>© 2026 Rei do Burguer. Todos os direitos reservados.</p>
+  <!-- RODAPÉ -->
+  <footer class="rodape">
+    <div class="rodape-icones">
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram fa-2x"></i></a>
+      <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook fa-2x"></i></a>
+      <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok fa-2x"></i></a>
+    </div>
 
 
+    <div>
+      <img src="imagem/logo.png" alt="Logo da barbearia">
+    </div>
 
-    </footer>
+
+    <p>Copyright 2026 | Velluto - Todos os direitos reservados.</p>
+  </footer>
 
 
+  <!-- BOTÃO FIXO DO WHATSAPP -->
+  <a
+    href="https://api.whatsapp.com/send?phone=5511994856547&text=Quero%20fazer%20um%20pedido!"
+    class="botao-whatsapp"
+    target="_blank" rel="noopener"
+   
+  >
+    <img src="imagem/whatsapp.svg" alt="Fale conosco">
+    <span class="dica-texto">Fale Conosco</span>
+  </a>
+
+
+  <script src="script.js"></script>
 </body>
 </html>
